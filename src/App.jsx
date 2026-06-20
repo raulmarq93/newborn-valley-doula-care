@@ -48,6 +48,10 @@ const imageAssets = {
     src: 'images/sheila/story-care.jpg',
     alt: 'Quiet newborn care moment at home',
   },
+  'team-one': {
+    src: 'images/sheila/hero-main.jpg',
+    alt: 'Sheila holding a newborn',
+  },
   'gallery-one': {
     src: 'images/sheila/gallery-newborn.jpg',
     alt: 'Newborn care support at home',

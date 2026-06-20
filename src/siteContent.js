@@ -58,19 +58,13 @@ export const content = {
       ],
     },
     team: {
-      title: 'Meet the care team',
+      title: 'Meet Sheila',
       members: [
         {
-          name: 'Marisol',
-          role: 'Postpartum doula',
+          name: 'Sheila',
+          role: 'Founder & postpartum doula',
           bio:
-            'Marisol brings a calm presence, years of family-centered care, and a love for helping parents feel capable in the small moments that shape early life at home.',
-        },
-        {
-          name: 'Elena',
-          role: 'Newborn care assistant',
-          bio:
-            'Elena supports families with soothing, bottle care, baby laundry, and gentle household rhythms so parents can recover and reconnect.',
+            'Sheila brings 33 years of hands-on newborn care experience and seven years serving families as a postpartum doula. Her love for caring for babies began at 16, helping in her mother\'s daycare, and later grew through running her own home-based daycare for eight years. As a mother of three, including boy-girl twins, she understands how beautiful and overwhelming the first weeks can feel. After wishing she had known about doula support during her own postpartum journey, Sheila now offers the steady, nurturing care she once would have loved to receive. She has supported more than 30 families with calm guidance, practical newborn care, and heartfelt encouragement.',
         },
       ],
       readBio: 'Read bio',
@@ -203,19 +197,13 @@ export const content = {
       ],
     },
     team: {
-      title: 'Conoce al equipo',
+      title: 'Conoce a Sheila',
       members: [
         {
-          name: 'Marisol',
-          role: 'Doula posparto',
+          name: 'Sheila',
+          role: 'Fundadora y doula posparto',
           bio:
-            'Marisol aporta calma, experiencia en cuidado familiar y amor por ayudar a los padres a sentirse capaces en los pequeños momentos de la vida en casa.',
-        },
-        {
-          name: 'Elena',
-          role: 'Asistente de recién nacidos',
-          bio:
-            'Elena ayuda con consuelo, biberones, ropita del bebé y ritmos suaves en el hogar para que los padres puedan recuperarse y reconectar.',
+            'Sheila cuenta con 33 años de experiencia práctica cuidando recién nacidos y siete años acompañando familias como doula posparto. Su amor por cuidar bebés comenzó a los 16 años, ayudando en la guardería de su mamá, y después creció al dirigir su propia guardería en casa durante ocho años. Como madre de tres hijos, incluyendo gemelos niño y niña, entiende lo hermosa y abrumadora que puede sentirse la primera etapa en casa. Después de desear haber conocido el apoyo de una doula durante su propio posparto, Sheila ahora ofrece el cuidado tranquilo y amoroso que a ella le hubiera gustado recibir. Ha acompañado a más de 30 familias con guía serena, cuidado práctico del recién nacido y apoyo de corazón.',
         },
       ],
       readBio: 'Leer bio',

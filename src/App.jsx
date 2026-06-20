@@ -27,6 +27,45 @@ const imageSlots = [
   'testimonial',
 ];
 
+const imageAssets = {
+  'hero-main': {
+    src: 'images/sheila/hero-main.jpg',
+    alt: 'Postpartum doula holding a sleeping newborn',
+  },
+  'hero-small-top': {
+    src: 'images/sheila/baby-hand.jpg',
+    alt: 'A newborn holding an adult finger',
+  },
+  'hero-small-bottom': {
+    src: 'images/sheila/hero-care.jpg',
+    alt: 'Postpartum doula holding a swaddled newborn',
+  },
+  about: {
+    src: 'images/sheila/hero-care.jpg',
+    alt: 'Postpartum doula caring for a newborn',
+  },
+  story: {
+    src: 'images/sheila/story-care.jpg',
+    alt: 'Quiet newborn care moment at home',
+  },
+  'gallery-one': {
+    src: 'images/sheila/gallery-newborn.jpg',
+    alt: 'Newborn care support at home',
+  },
+  'gallery-two': {
+    src: 'images/sheila/gallery-feeding.jpg',
+    alt: 'Bottle and feeding support setup',
+  },
+  'gallery-three': {
+    src: 'images/sheila/gallery-care.jpg',
+    alt: 'Doula holding a newborn in a care setting',
+  },
+  testimonial: {
+    src: 'images/sheila/baby-hand.jpg',
+    alt: 'Close-up of a newborn hand',
+  },
+};
+
 function BrandMark({ label }) {
   return (
     <span className="brand-lockup" aria-label={label}>
@@ -44,10 +83,20 @@ function SectionLabel({ children }) {
 
 function VisualSlot({ name, className = '', label = 'Future family photo' }) {
   const slotClass = imageSlots.includes(name) ? name : 'hero-main';
+  const image = imageAssets[name];
+  const loading = name === 'hero-main' ? 'eager' : 'lazy';
 
   return (
-    <div className={`visual-slot ${slotClass} ${className}`} role="img" aria-label={label}>
-      <span className="visual-flower" aria-hidden="true" />
+    <div
+      className={`visual-slot ${slotClass} ${image ? 'has-photo' : ''} ${className}`}
+      role={image ? undefined : 'img'}
+      aria-label={image ? undefined : label}
+    >
+      {image ? (
+        <img src={image.src} alt={image.alt} loading={loading} decoding="async" />
+      ) : (
+        <span className="visual-flower" aria-hidden="true" />
+      )}
     </div>
   );
 }

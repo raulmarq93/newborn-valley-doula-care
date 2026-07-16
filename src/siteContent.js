@@ -11,7 +11,7 @@ export const content = {
       tagline: 'Supporting your family with calm, care, and confidence.',
       serviceArea: 'Bay Area, California',
       email: 'hello@newbornvalleydoula.com',
-      phone: '(555) 214-2026',
+      phone: '(209) 404-8630',
     },
     nav: [
       { label: 'About', href: '#about' },
@@ -127,7 +127,7 @@ export const content = {
           value: 'hello@newbornvalleydoula.com',
           href: 'mailto:hello@newbornvalleydoula.com',
         },
-        { label: 'Phone', value: '(555) 214-2026', href: 'tel:+15552142026' },
+        { label: 'Phone', value: '(209) 404-8630', href: 'tel:+12094048630' },
         { label: 'Service area', value: 'Bay Area, California' },
       ],
       formTitle: 'Send a message',
@@ -150,7 +150,7 @@ export const content = {
       tagline: 'Apoyando a tu familia con calma, cuidado y confianza.',
       serviceArea: 'Área de la Bahía, California',
       email: 'hello@newbornvalleydoula.com',
-      phone: '(555) 214-2026',
+      phone: '(209) 404-8630',
     },
     nav: [
       { label: 'Conócenos', href: '#about' },
@@ -263,10 +263,11 @@ export const content = {
       cards: [
         {
           label: 'Email',
-          value: 'hello@newbornvalleydoula.com',
-          href: 'mailto:hello@newbornvalleydoula.com',
+          value: 'sheila@newbornvalleydoula.com',
+          href: 'mailto:sheila@newbornvalleydoula.com',
         },
-        { label: 'Teléfono', value: '(209) 404-8630', href: 'tel:+12093289691' },
+
+        { label: 'Teléfono', value: '(209) 404-8630', href: 'tel:+12094048630' },
         { label: 'Área de servicio', value: 'Área de la Bahía, California' },
       ],
       formTitle: 'Enviar mensaje',

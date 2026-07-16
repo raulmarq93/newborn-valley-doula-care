@@ -10,7 +10,7 @@ export const content = {
       fullBrand: 'Newborn Valley Doula Care',
       tagline: 'Supporting your family with calm, care, and confidence.',
       serviceArea: 'Bay Area, California',
-      email: 'hello@newbornvalleydoula.com',
+      email: 'sheila@newbornvalleydoula.com',
       phone: '(209) 404-8630',
     },
     nav: [
@@ -149,7 +149,7 @@ export const content = {
       fullBrand: 'Newborn Valley Doula Care',
       tagline: 'Apoyando a tu familia con calma, cuidado y confianza.',
       serviceArea: 'Área de la Bahía, California',
-      email: 'hello@newbornvalleydoula.com',
+      email: 'sheila@newbornvalleydoula.com',
       phone: '(209) 404-8630',
     },
     nav: [

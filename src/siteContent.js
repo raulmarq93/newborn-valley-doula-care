@@ -266,7 +266,7 @@ export const content = {
           value: 'hello@newbornvalleydoula.com',
           href: 'mailto:hello@newbornvalleydoula.com',
         },
-        { label: 'Teléfono', value: '(555) 214-2026', href: 'tel:+15552142026' },
+        { label: 'Teléfono', value: '(209) 404-8630', href: 'tel:+12093289691' },
         { label: 'Área de servicio', value: 'Área de la Bahía, California' },
       ],
       formTitle: 'Enviar mensaje',

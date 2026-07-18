@@ -103,20 +103,20 @@ function render() {
         </div>
         <div class="photo-grid" aria-label="Photo preview area">
           <div class="photo main-photo">
-            <img src="images/sheila/hero-main.jpg" alt="Sheila holding a sleeping newborn" fetchpriority="high" />
+            <img src="images/sheila/section1image1.png" alt="Sheila holding a newborn beneath a framed doula definition" fetchpriority="high" />
           </div>
           <div class="photo small-photo">
             <img src="images/sheila/baby-hand.jpg" alt="A newborn holding an adult finger" />
           </div>
           <div class="photo small-photo second">
-            <img src="images/sheila/hero-care.jpg" alt="Sheila caring for a swaddled newborn" />
+            <img src="images/sheila/section1image2.png" alt="Sheila holding a peacefully swaddled newborn" />
           </div>
         </div>
       </section>
 
       <section id="about" class="section split">
         <div class="photo portrait">
-          <img src="images/sheila/story-care.jpg" alt="A quiet newborn care moment at home" loading="lazy" />
+          <img src="images/sheila/section2image1.png" alt="Sheila standing with a sleeping swaddled newborn" loading="lazy" />
         </div>
         <div>
           <p class="eyebrow">About</p>
@@ -138,10 +138,10 @@ function render() {
         <h2 id="gallery-title">Gentle support for your growing family</h2>
         <div class="gallery-grid">
           <div class="photo gallery-photo">
-            <img src="images/sheila/gallery-newborn.jpg" alt="Newborn care support at home" loading="lazy" />
+            <img src="images/sheila/section3image1.png" alt="Sheila comforting a sleeping newborn" loading="lazy" />
           </div>
           <div class="photo gallery-photo">
-            <img src="images/sheila/gallery-feeding.jpg" alt="Bottle and feeding support setup" loading="lazy" />
+            <img src="images/sheila/section3image2.png" alt="Sheila bottle-feeding a newborn in a calm home setting" loading="lazy" />
           </div>
           <div class="photo gallery-photo">
             <img src="images/sheila/gallery-care.jpg" alt="Sheila holding a newborn in a care setting" loading="lazy" />

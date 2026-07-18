@@ -102,14 +102,22 @@ function render() {
           </div>
         </div>
         <div class="photo-grid" aria-label="Photo preview area">
-          <div class="photo main-photo">Photo</div>
-          <div class="photo small-photo">Photo</div>
-          <div class="photo small-photo second">Photo</div>
+          <div class="photo main-photo">
+            <img src="images/sheila/hero-main.jpg" alt="Sheila holding a sleeping newborn" fetchpriority="high" />
+          </div>
+          <div class="photo small-photo">
+            <img src="images/sheila/baby-hand.jpg" alt="A newborn holding an adult finger" />
+          </div>
+          <div class="photo small-photo second">
+            <img src="images/sheila/hero-care.jpg" alt="Sheila caring for a swaddled newborn" />
+          </div>
         </div>
       </section>
 
       <section id="about" class="section split">
-        <div class="photo portrait">Photo</div>
+        <div class="photo portrait">
+          <img src="images/sheila/story-care.jpg" alt="A quiet newborn care moment at home" loading="lazy" />
+        </div>
         <div>
           <p class="eyebrow">About</p>
           <h2>${t.aboutTitle}</h2>
@@ -122,6 +130,22 @@ function render() {
         <h2>${t.servicesTitle}</h2>
         <div class="service-grid">
           ${t.services.map((item) => `<article>${item}</article>`).join('')}
+        </div>
+      </section>
+
+      <section class="section care-gallery" aria-labelledby="gallery-title">
+        <p class="eyebrow">Care in action</p>
+        <h2 id="gallery-title">Gentle support for your growing family</h2>
+        <div class="gallery-grid">
+          <div class="photo gallery-photo">
+            <img src="images/sheila/gallery-newborn.jpg" alt="Newborn care support at home" loading="lazy" />
+          </div>
+          <div class="photo gallery-photo">
+            <img src="images/sheila/gallery-feeding.jpg" alt="Bottle and feeding support setup" loading="lazy" />
+          </div>
+          <div class="photo gallery-photo">
+            <img src="images/sheila/gallery-care.jpg" alt="Sheila holding a newborn in a care setting" loading="lazy" />
+          </div>
         </div>
       </section>
 

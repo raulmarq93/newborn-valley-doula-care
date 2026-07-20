@@ -3,14 +3,14 @@ import './styles.css';
 const content = {
   en: {
     nav: ['About', 'Services', 'Stories', 'Contact'],
-    brand: 'Newborn Valley Doula Care',
+    brand: 'new valley doula care',
     tagline: 'Supporting your family with calm, care, and confidence.',
-    heroTitle: 'Postpartum care that feels like a village',
+    heroTitle: 'Expert postpartum care',
     heroBody:
-      'Gentle, bilingual support for the first tender weeks at home. We help with newborn care, feeding rhythms, rest, recovery, and the small daily tasks that make space for bonding.',
+      'With over 35 years of experience, I provide gentle bilingual support for your first tender weeks at home. I help with newborn care, feeding, rest, and recovery so you can focus on bonding and recovery.',
     aboutTitle: 'Meet your postpartum doula',
     aboutBody:
-      'Newborn Valley Doula Care was created for families who want grounded, nurturing help after birth. Our care is practical and emotional: warm hands for the baby, steady reassurance for parents, and a peaceful presence in the home.',
+      'new valley doula care was created for families who want grounded, nurturing help after birth. Our care is practical and emotional: warm hands for the baby, steady reassurance for parents, and a peaceful presence in the home.',
     servicesTitle: 'Gentle, hands-on postpartum care',
     services: [
       'Newborn soothing, swaddling, diapering, and burping',
@@ -61,14 +61,14 @@ const content = {
   },
   es: {
     nav: ['Conócenos', 'Servicios', 'Historias', 'Contacto'],
-    brand: 'Newborn Valley Doula Care',
+    brand: 'new valley doula care',
     tagline: 'Apoyando a tu familia con calma, cuidado y confianza.',
     heroTitle: 'Cuidado posparto que se siente como una comunidad',
     heroBody:
       'Apoyo tierno y bilingüe para las primeras semanas en casa. Ayudamos con el cuidado del recién nacido, la alimentación, el descanso, la recuperación y las tareas pequeñas que abren espacio para conectar.',
     aboutTitle: 'Conoce a tu doula posparto',
     aboutBody:
-      'Newborn Valley Doula Care fue creado para familias que desean apoyo tranquilo y amoroso después del nacimiento.',
+      'new valley doula care fue creado para familias que desean apoyo tranquilo y amoroso después del nacimiento.',
     servicesTitle: 'Cuidado posparto suave y práctico',
     services: [
       'Calmar, envolver, cambiar pañales y sacar gases',

@@ -1,6 +1,6 @@
-# Newborn Valley Doula Care
+# new valley doula care
 
-Local website preview for Newborn Valley Doula Care.
+Local website preview for new valley doula care.
 
 ## View Locally
 

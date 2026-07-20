@@ -20,6 +20,36 @@ const content = {
       'Overnight care and rest-focused routines',
       'Twin and sibling transition support',
     ],
+    testimonials: {
+      label: 'Family stories',
+      title: 'Words from families who felt held',
+      intro: 'A few sample stories for now. Replace these with real testimonials when ready.',
+      quotes: [
+        {
+          quote: 'The first nights home felt much calmer with our doula there. We slept, asked every question, and finally felt like we had a plan.',
+          author: 'Sofia R.',
+          detail: 'First-time parent',
+        },
+        {
+          quote: 'She brought a peaceful energy into our home and cared for our twins with so much patience. It changed our whole recovery.',
+          author: 'The Morales Family',
+          detail: 'Twin parents',
+        },
+        {
+          quote: 'Having support in English and Spanish helped our whole family feel included. Warm, professional, and deeply kind.',
+          author: 'Ana and David',
+          detail: 'Bay Area family',
+        },
+      ],
+      formTitle: 'Share your experience',
+      formIntro: 'Your story can help another family feel ready to reach out.',
+      name: 'Name',
+      email: 'Email',
+      message: 'Message',
+      max: 'Max 600 characters.',
+      submit: 'Share Story',
+      success: 'Thank you. Your story is ready to be connected to email or a form service.',
+    },
     contactTitle: 'Let us care for your family together.',
     contactBody:
       'Reach out with questions, schedules, or what support could look like in your home. We would be honored to hear your story.',
@@ -48,6 +78,36 @@ const content = {
       'Cuidado nocturno y rutinas enfocadas en descanso',
       'Apoyo con gemelos y transición de hermanos',
     ],
+    testimonials: {
+      label: 'Historias de familias',
+      title: 'Palabras de familias que se sintieron cuidadas',
+      intro: 'Estas son historias de muestra por ahora. Cámbialas por testimonios reales cuando estén listos.',
+      quotes: [
+        {
+          quote: 'Las primeras noches en casa se sintieron mucho más tranquilas. Pudimos dormir, hacer preguntas y sentir que teníamos un plan.',
+          author: 'Sofia R.',
+          detail: 'Mamá primeriza',
+        },
+        {
+          quote: 'Trajo una energía de paz a nuestro hogar y cuidó a nuestros gemelos con muchísima paciencia. Cambió toda nuestra recuperación.',
+          author: 'Familia Morales',
+          detail: 'Padres de gemelos',
+        },
+        {
+          quote: 'Tener apoyo en inglés y español ayudó a que toda la familia se sintiera incluida. Cálida, profesional y muy amable.',
+          author: 'Ana y David',
+          detail: 'Familia del Área de la Bahía',
+        },
+      ],
+      formTitle: 'Comparte tu experiencia',
+      formIntro: 'Tu historia puede ayudar a otra familia a sentirse lista para contactarnos.',
+      name: 'Nombre',
+      email: 'Email',
+      message: 'Mensaje',
+      max: 'Máximo 600 caracteres.',
+      submit: 'Compartir historia',
+      success: 'Gracias. Tu historia está lista para conectarse a un correo o servicio de formularios.',
+    },
     contactTitle: 'Cuidemos a tu familia juntas.',
     contactBody:
       'Escríbenos con preguntas, horarios o ideas de cómo podría verse el apoyo en tu hogar. Sería un honor escuchar tu historia.',
@@ -149,12 +209,49 @@ function render() {
         </div>
       </section>
 
-      <section id="stories" class="section stories">
-        <p class="eyebrow">Family stories</p>
-        <h2>Words from families who felt held</h2>
-        <blockquote>
-          “Having support in English and Spanish helped our whole family feel included. Warm, professional, and deeply kind.”
-        </blockquote>
+      <section id="stories" class="section testimonials-section">
+        <div class="photo testimonial-photo">
+          <img src="images/sheila/baby-hand.jpg" alt="Close-up of a newborn holding an adult finger" loading="lazy" />
+        </div>
+        <div class="testimonial-heading">
+          <p class="eyebrow">${t.testimonials.label}</p>
+          <h2>${t.testimonials.title}</h2>
+          <p>${t.testimonials.intro}</p>
+        </div>
+        <div class="quote-grid">
+          ${t.testimonials.quotes.map((quote) => `
+            <figure class="quote-card">
+              <span class="quote-mark" aria-hidden="true">“</span>
+              <blockquote>${quote.quote}</blockquote>
+              <figcaption>
+                <strong>${quote.author}</strong>
+                <span>${quote.detail}</span>
+              </figcaption>
+            </figure>
+          `).join('')}
+        </div>
+        <form class="review-form" id="review-form">
+          <h3>${t.testimonials.formTitle}</h3>
+          <p>${t.testimonials.formIntro}</p>
+          <div class="field-row">
+            <label>
+              <span>${t.testimonials.name}</span>
+              <input type="text" maxlength="80" required />
+            </label>
+            <label>
+              <span>${t.testimonials.email}</span>
+              <input type="email" maxlength="120" />
+            </label>
+          </div>
+          <label>
+            <span>${t.testimonials.message}</span>
+            <textarea rows="4" maxlength="600" required></textarea>
+          </label>
+          <div class="form-actions">
+            <small id="review-status">${t.testimonials.max}</small>
+            <button class="button primary" type="submit">${t.testimonials.submit}</button>
+          </div>
+        </form>
       </section>
 
       <section id="contact" class="section contact">
@@ -193,6 +290,11 @@ function render() {
       lang = button.dataset.lang;
       render();
     });
+  });
+
+  document.querySelector('#review-form').addEventListener('submit', (event) => {
+    event.preventDefault();
+    document.querySelector('#review-status').textContent = t.testimonials.success;
   });
 }
 
